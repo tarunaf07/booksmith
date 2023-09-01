@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;0,900;1,200;1,300;1,400;1,500;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    background-color: #d39389;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px #AA594e;
+}
+nav .logo{
+    margin-right: 1000px;
+}
+nav .logo img{
+    width: 200px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+nav li a{
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+    color: #900c0f;
+}
+nav li a .current{
+color: #0B3B42;
+}
+nav li a:hover{
+    color: #0B3B42;
+    transform: scale(1.2);
+}
+.like i{
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #900c0f;
+}
+.like i:hover{
+    transform: scale(1.2);
+    color: #0B3B42;
+}
+
+/*index*/
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 10%;
+    position: relative;
+}   
+.main h1{
+    position: relative;
+    font-size: 55px;
+    top: 7px;
+    left: 25px;
+
+}
+.main h1 span{
+    color: #900c0f;
+}
+.main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 60px;
+    left: 25px;
+}
+.main-img{
+    position: relative;
+    top: 50px;
+}
+.services{
+    width: 100%;
+    height:  auto;
+    margin: 100px 0;
+}
+.services .service-box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.services .service-box .service-card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 8px #0B3B42;
+    padding: 15px 10px;
+
+}
+.services .service-box .service-card i{
+    color: #900c0f;
+    font-size: 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.services .service-box .service-card h3{
+    margin-bottom: 10px;
+}
+.services .service-box .service-card:hover{
+    transform: scale(1.1);
+    background-color: #AA594e;
+}
+
+
+/*catalogue*/
+.container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 50px;
+}
+.container h3{
+    font-size: 2em;
+    color: #900c0f;
+    margin-bottom: 25px;
+    margin-right: 250px;
+
+}
+.box{
+    padding: 0 150px;
+}
+.box .list{
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    background: #d39389;
+}
+
+.box:hover .list{
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.box .list:hover{
+    box-shadow: -10px 20px 15px rgba(255,255,255,0.5);
+    transform: scale(1.15);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.box .list .imgBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.box .list .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
